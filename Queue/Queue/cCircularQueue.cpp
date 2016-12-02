@@ -2,6 +2,12 @@
 #include "cCircularQueue.h"
 
 
+lkdlksjaflkas
+
+sldkfjsadlkfjsal;
+
+alksjdflsakjdflk
+
 cCircularQueue::cCircularQueue(void)
 	: m_nFront(0)
 	, m_nRear(0)
