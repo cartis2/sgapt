@@ -1,0 +1,26 @@
+﻿  stdafx.cpp
+  MyUtil.cpp
+  Direct3D_00.cpp
+  cTransform.cpp
+  cTimeMgr.cpp
+  cSingletonBase.cpp
+  cScene_00.cpp
+  cScene.cpp
+  cMainGame.cpp
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\cmaingame.cpp(31): warning C4316: 'cScene_00': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+  cLogMgr.cpp
+  cKeyMgr.cpp
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\ckeymgr.cpp(29): warning C4800: 'int': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+  cImage.cpp
+  cGizmoManager.cpp
+  cDXFontManager.cpp
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\cdxfontmanager.cpp(31): warning C4244: '인수': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\cdxfontmanager.cpp(31): warning C4244: '인수': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\cdxfontmanager.cpp(73): warning C4244: '인수': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\cdxfontmanager.cpp(73): warning C4244: '인수': 'float'에서 'INT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  cCamera.cpp
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\ccamera.cpp(145): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\lee진\desktop\3d 프레임워크\20161123_rendertotexture\direct3d_rendertotexture\direct3d_06\direct3d_06.v12.v12\ccamera.cpp(146): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Direct3D_06.vcxproj -> C:\Users\Lee진\Desktop\3D 프레임워크\20161123_RenderToTexture\Direct3D_RenderToTexture\Direct3D_06\Direct3D_06.v12.v12\Debug\Direct3D_006_Transform.exe
+  Direct3D_06.vcxproj -> C:\Users\Lee진\Desktop\3D 프레임워크\20161123_RenderToTexture\Direct3D_RenderToTexture\Direct3D_06\Direct3D_06.v12.v12\Debug\Direct3D_006_Transform.pdb (Full PDB)
