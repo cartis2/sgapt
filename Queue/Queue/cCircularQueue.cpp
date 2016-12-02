@@ -2,11 +2,19 @@
 #include "cCircularQueue.h"
 
 
+<<<<<<< HEAD
 lkdlksjaflkas
 
 sldkfjsadlkfjsal;
 
 alksjdflsakjdflk
+=======
+sdagisdg
+sdikgnagks
+nskgndka
+nkssdgnka
+nssdng
+>>>>>>> 84cc5abf9ab664e2f6f41c13e62cf4ec87241ab8
 
 cCircularQueue::cCircularQueue(void)
 	: m_nFront(0)
