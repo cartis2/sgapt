@@ -9,6 +9,18 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+asgdaksd
+jsdgsd
+jjsdgk
+jsad
+gjij
+jas
+jg
+jsdg
+sjad
+gjsa
+gja
+
 // 	cCircularQueue q1;
 // 	q1.Enqueue(1);
 // 	q1.Enqueue(2);
