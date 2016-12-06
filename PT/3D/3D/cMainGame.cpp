@@ -4,11 +4,9 @@
 #include "cCamera.h"
 #include "cCrtController.h"
 #include "cSkinnedMesh.h"
-#include "cCube.h"
 
 // Map Test
 #include "cObjLoader.h"
-#include "cObjMap.h"
 #include "cMtlTex.h"
 
 #include "cBoundBox.h"
@@ -18,7 +16,6 @@ cMainGame::cMainGame(void)
 	, m_pCamera(NULL)
 	, m_pControl(NULL)
 	, m_pSkinnedMesh(NULL)
-	, m_pMap(NULL)
 	, m_pMapMesh(NULL)
 	//UI°ü·Ã
 	, m_pSprite(NULL)
@@ -70,7 +67,6 @@ cMainGame::~cMainGame(void)
 
 
 	// Map Test
-	SAFE_RELEASE(m_pMap);
 	SAFE_RELEASE(m_pMapMesh);
 	for each (auto p in m_vecMtlTex) SAFE_RELEASE(p);
 

@@ -6,7 +6,6 @@ class cCrtController;
 class cSkinnedMesh;
 
 // Map Test
-class iMap;
 class cMtlTex;
 
 class cBoundBox;
@@ -21,7 +20,6 @@ private:
 	cSkinnedMesh* m_pSkinnedMesh;
 
 	// Map Test;
-	iMap* m_pMap;
 	vector<cMtlTex*> m_vecMtlTex;
 	LPD3DXMESH		 m_pMapMesh;
 

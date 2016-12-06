@@ -55,14 +55,8 @@
     <Filter Include="소스 파일\Manager\SkinnedMeshManager">
       <UniqueIdentifier>{fa8df251-1cdc-4f7f-8661-aeedf2c68be6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Function\Cube">
-      <UniqueIdentifier>{79578eb2-6a39-4f56-aa0a-3361f8335bd6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Manager\KeyManager">
       <UniqueIdentifier>{82f0ea4f-3c2b-4f23-9601-2bd1fd2580ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Function\Terrain">
-      <UniqueIdentifier>{8c954c0e-51b6-4be6-bed3-b7bd192b279c}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Function\Frustum">
       <UniqueIdentifier>{fddcf76d-773d-4fd0-9098-beafb1491e75}</UniqueIdentifier>
@@ -75,9 +69,6 @@
     </Filter>
     <Filter Include="소스 파일\Map Test\Group">
       <UniqueIdentifier>{3a9b07a2-f3d6-4c79-af80-702bd72fcd55}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Map Test\IMap">
-      <UniqueIdentifier>{388ff619-9e75-44ed-89af-7240968738fa}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Function\xFile">
       <UniqueIdentifier>{7a52785c-9801-4063-aeff-ee4c80891c63}</UniqueIdentifier>
@@ -153,17 +144,11 @@
     <ClInclude Include="MultiAnimation.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="cCube.h">
-      <Filter>소스 파일\Function\Cube</Filter>
-    </ClInclude>
     <ClInclude Include="keyManager.h">
       <Filter>소스 파일\Manager\KeyManager</Filter>
     </ClInclude>
     <ClInclude Include="singletonBase.h">
       <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="cTerrain.h">
-      <Filter>소스 파일\Function\Terrain</Filter>
     </ClInclude>
     <ClInclude Include="cFrustum.h">
       <Filter>소스 파일\Function\Frustum</Filter>
@@ -173,12 +158,6 @@
     </ClInclude>
     <ClInclude Include="cObjLoader.h">
       <Filter>소스 파일\Map Test\Load</Filter>
-    </ClInclude>
-    <ClInclude Include="cObjMap.h">
-      <Filter>소스 파일\Map Test\Load</Filter>
-    </ClInclude>
-    <ClInclude Include="iMap.h">
-      <Filter>소스 파일\Map Test\IMap</Filter>
     </ClInclude>
     <ClInclude Include="cFontManager.h">
       <Filter>소스 파일\Manager\FontManager</Filter>
@@ -233,14 +212,8 @@
     <ClCompile Include="cSkinnedMeshManager.cpp">
       <Filter>소스 파일\Manager\SkinnedMeshManager</Filter>
     </ClCompile>
-    <ClCompile Include="cCube.cpp">
-      <Filter>소스 파일\Function\Cube</Filter>
-    </ClCompile>
     <ClCompile Include="keyManager.cpp">
       <Filter>소스 파일\Manager\KeyManager</Filter>
-    </ClCompile>
-    <ClCompile Include="cTerrain.cpp">
-      <Filter>소스 파일\Function\Terrain</Filter>
     </ClCompile>
     <ClCompile Include="cFrustum.cpp">
       <Filter>소스 파일\Function\Frustum</Filter>
@@ -250,12 +223,6 @@
     </ClCompile>
     <ClCompile Include="cObjLoader.cpp">
       <Filter>소스 파일\Map Test\Load</Filter>
-    </ClCompile>
-    <ClCompile Include="cObjMap.cpp">
-      <Filter>소스 파일\Map Test\Load</Filter>
-    </ClCompile>
-    <ClCompile Include="iMap.cpp">
-      <Filter>소스 파일\Map Test\IMap</Filter>
     </ClCompile>
     <ClCompile Include="cFontManager.cpp">
       <Filter>소스 파일\Manager\FontManager</Filter>

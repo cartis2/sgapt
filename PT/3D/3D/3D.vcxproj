@@ -153,7 +153,6 @@
     <ClInclude Include="cBoundBox.h" />
     <ClInclude Include="cCamera.h" />
     <ClInclude Include="cCrtController.h" />
-    <ClInclude Include="cCube.h" />
     <ClInclude Include="cDeviceManager.h" />
     <ClInclude Include="cFontManager.h" />
     <ClInclude Include="cFrustum.h" />
@@ -163,13 +162,10 @@
     <ClInclude Include="cMtlTex.h" />
     <ClInclude Include="cObject.h" />
     <ClInclude Include="cObjLoader.h" />
-    <ClInclude Include="cObjMap.h" />
     <ClInclude Include="cSkinnedMesh.h" />
     <ClInclude Include="cSkinnedMeshManager.h" />
-    <ClInclude Include="cTerrain.h" />
     <ClInclude Include="cTextureManager.h" />
     <ClInclude Include="cTimeManager.h" />
-    <ClInclude Include="iMap.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="MultiAnimation.hpp" />
     <ClInclude Include="Resource.h" />
@@ -184,7 +180,6 @@
     <ClCompile Include="cBoundBox.cpp" />
     <ClCompile Include="cCamera.cpp" />
     <ClCompile Include="cCrtController.cpp" />
-    <ClCompile Include="cCube.cpp" />
     <ClCompile Include="cDeviceManager.cpp" />
     <ClCompile Include="cFontManager.cpp" />
     <ClCompile Include="cFrustum.cpp" />
@@ -194,13 +189,10 @@
     <ClCompile Include="cMtlTex.cpp" />
     <ClCompile Include="cObject.cpp" />
     <ClCompile Include="cObjLoader.cpp" />
-    <ClCompile Include="cObjMap.cpp" />
     <ClCompile Include="cSkinnedMesh.cpp" />
     <ClCompile Include="cSkinnedMeshManager.cpp" />
-    <ClCompile Include="cTerrain.cpp" />
     <ClCompile Include="cTextureManager.cpp" />
     <ClCompile Include="cTimeManager.cpp" />
-    <ClCompile Include="iMap.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

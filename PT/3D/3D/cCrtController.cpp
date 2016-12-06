@@ -1,6 +1,5 @@
 #include "stdAfx.h"
 #include "cCrtController.h"
-#include "iMap.h"
 
 cCrtController::cCrtController(void)
 	//: m_vPosition(5, 0, 0)
