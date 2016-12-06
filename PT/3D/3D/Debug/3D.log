@@ -1,0 +1,6 @@
+﻿  cMainGame.cpp
+c:\users\lee진\desktop\3d\3d\cmaingame.cpp(49): warning C4316: 'cCamera': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+c:\users\lee진\desktop\3d\3d\cmaingame.cpp(52): warning C4316: 'cCrtController': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+c:\users\lee진\desktop\3d\3d\cmaingame.cpp(133): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  3D.vcxproj -> C:\Users\Lee진\Desktop\3D\Debug\3D.exe
+  3D.vcxproj -> C:\Users\Lee진\Desktop\3D\Debug\3D.pdb (Full PDB)
