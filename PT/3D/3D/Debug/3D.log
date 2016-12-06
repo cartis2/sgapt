@@ -1,16 +1,7 @@
-﻿  cMainGame.cpp
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(88): warning C4316: 'cCamera': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(91): warning C4316: 'cCrtController': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(116): warning C4316: 'cBoundBox': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(117): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(270): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(580): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(581): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(584): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\sga\sgapt\pt\3d\3d\cmaingame.cpp(585): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
+﻿  keyManager.cpp
+  iMap.cpp
   3D.cpp
   코드를 생성하고 있습니다...
+  LINK : D:\sga\sgapt\PT\3D\Debug\3D.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   3D.vcxproj -> D:\sga\sgapt\PT\3D\Debug\3D.exe
   3D.vcxproj -> D:\sga\sgapt\PT\3D\Debug\3D.pdb (Full PDB)
