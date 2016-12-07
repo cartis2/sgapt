@@ -5,6 +5,7 @@
 #include "cUIImageView.h"
 #include "cUITextView.h"
 #include "cUIButton.h"
+#include "cSoundTest.h"
 
 enum eUITag
 {
@@ -16,6 +17,7 @@ cMainGame::cMainGame(void)
 	: m_pCamera(NULL)
 	, m_pGrid(NULL)
 	, m_pUIRoot(NULL)
+	, m_pSoundTest(NULL)
 {
 }
 
@@ -27,6 +29,9 @@ cMainGame::~cMainGame(void)
 	SAFE_RELEASE(m_pSprite);
 	SAFE_RELEASE(m_pUIRoot);
 
+	m_pSoundTest->release();
+	SAFE_DELETE(m_pSoundTest);
+
 	g_pSkinnedMeshManager->Destroy();
 	g_pObjectManager->Destroy();
 	g_pTextureManager->Destroy();
@@ -36,6 +41,22 @@ cMainGame::~cMainGame(void)
 
 void cMainGame::Setup()
 {
+	m_pSoundTest = new cSoundTest;
+	m_pSoundTest->init();
+
+	m_pSoundTest->addSound("사운드1", "bgm1.mp3", true, true);
+	//m_pSoundTest->play("사운드1", 1.0f);
+
+
+
+
+
+
+
+
+
+
+
 	m_pCamera = new cCamera;
 	m_pCamera->Setup();
 
@@ -106,6 +127,7 @@ void cMainGame::Update()
 
 void cMainGame::Render()
 {
+
 	g_pD3DDevice->Clear(NULL,
 		NULL,
 		D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
@@ -122,9 +144,11 @@ void cMainGame::Render()
 	{
 		m_pUIRoot->Render(m_pSprite);
 	}
+	
 	g_pD3DDevice->EndScene();
 
 	g_pD3DDevice->Present(NULL, NULL, NULL, NULL);
+	m_pSoundTest->play("사운드1", 1.0f);
 }
 
 void cMainGame::WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam )

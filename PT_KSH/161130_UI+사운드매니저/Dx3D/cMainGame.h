@@ -2,6 +2,7 @@
 
 class cCamera;
 class cGrid;
+class cSoundTest;
 
 #include "cUIButton.h"
 
@@ -12,6 +13,8 @@ private:
 	cGrid*						m_pGrid;
 	LPD3DXSPRITE				m_pSprite;
 	cUIObject*					m_pUIRoot;
+
+	cSoundTest*					m_pSoundTest;
 
 public:
 	cMainGame(void);
