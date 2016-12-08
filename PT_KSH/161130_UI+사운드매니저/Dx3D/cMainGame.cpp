@@ -54,7 +54,7 @@ void cMainGame::Setup()
 
 	g_pSoundManager->init();
 	g_pSoundManager->addSound("사운드1", "bgm1.mp3", true, true);
-	g_pSoundManager->play("사운드1", 1.0f);
+	//g_pSoundManager->play("사운드1", 1.0f);
 
 
 
