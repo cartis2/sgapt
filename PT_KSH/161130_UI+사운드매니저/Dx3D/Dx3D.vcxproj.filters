@@ -147,6 +147,9 @@
     <ClInclude Include="cSoundManager.h">
       <Filter>프레임워크\매니저\사운드</Filter>
     </ClInclude>
+    <ClInclude Include="cSoundTest.h">
+      <Filter>프레임워크\매니저\사운드</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -252,6 +255,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="cSoundManager.cpp">
+      <Filter>프레임워크\매니저\사운드</Filter>
+    </ClCompile>
+    <ClCompile Include="cSoundTest.cpp">
       <Filter>프레임워크\매니저\사운드</Filter>
     </ClCompile>
   </ItemGroup>
