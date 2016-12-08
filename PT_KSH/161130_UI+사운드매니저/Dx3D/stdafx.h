@@ -152,3 +152,4 @@ struct ST_SIZE
 #include "cGameObject.h"
 #include "cUIObject.h"
 #include "cFontManager.h"
+#include "cSoundManager.h"

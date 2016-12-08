@@ -29,14 +29,19 @@ cMainGame::~cMainGame(void)
 	SAFE_RELEASE(m_pSprite);
 	SAFE_RELEASE(m_pUIRoot);
 
+
 	m_pSoundTest->release();
 	SAFE_DELETE(m_pSoundTest);
+	g_pSoundManager->Destroy();
+
 
 	g_pSkinnedMeshManager->Destroy();
 	g_pObjectManager->Destroy();
 	g_pTextureManager->Destroy();
 	g_pFontManager->Destory();
 	g_pDeviceManager->Destroy();
+	
+	
 }
 
 void cMainGame::Setup()
@@ -45,8 +50,11 @@ void cMainGame::Setup()
 	m_pSoundTest->init();
 
 	m_pSoundTest->addSound("사운드1", "bgm1.mp3", true, true);
-	m_pSoundTest->play("사운드1", 1.0f);
+	//m_pSoundTest->play("사운드1", 1.0f);
 
+	g_pSoundManager->init();
+	g_pSoundManager->addSound("사운드1", "bgm1.mp3", true, true);
+	g_pSoundManager->play("사운드1", 1.0f);
 
 
 
