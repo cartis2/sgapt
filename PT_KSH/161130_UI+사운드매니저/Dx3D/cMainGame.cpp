@@ -45,7 +45,7 @@ void cMainGame::Setup()
 	m_pSoundTest->init();
 
 	m_pSoundTest->addSound("사운드1", "bgm1.mp3", true, true);
-	//m_pSoundTest->play("사운드1", 1.0f);
+	m_pSoundTest->play("사운드1", 1.0f);
 
 
 
@@ -148,7 +148,7 @@ void cMainGame::Render()
 	g_pD3DDevice->EndScene();
 
 	g_pD3DDevice->Present(NULL, NULL, NULL, NULL);
-	m_pSoundTest->play("사운드1", 1.0f);
+	//m_pSoundTest->play("사운드1", 1.0f);
 }
 
 void cMainGame::WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam )
