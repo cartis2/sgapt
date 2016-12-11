@@ -161,5 +161,6 @@ struct ST_OBB
 
 #include "cFontManager.h"
 #include "keyManager.h"
+#include "cSoundManager.h"
 
 #define KEYMANAGER keyManager::getSingleton()

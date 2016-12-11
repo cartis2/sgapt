@@ -55,6 +55,9 @@ cMainGame::~cMainGame(void)
 	SAFE_DELETE(m_pControl);
 	SAFE_DELETE(m_pSkinnedMesh);
 
+	//Sound TEST
+	g_pSoundManager->Destroy();
+
 	//UI TEST
 	SAFE_RELEASE(m_pSprite);
 	SAFE_RELEASE(m_pTexture);
@@ -84,6 +87,11 @@ cMainGame::~cMainGame(void)
 
 void cMainGame::Setup()
 {
+	//Sound Test
+	g_pSoundManager->init();
+	g_pSoundManager->addSound("배경음악", "RES/Sound/bgm.mp3", true, true);
+	g_pSoundManager->play("배경음악", 1.0f);
+	//
 	m_pGrid = new cGrid;
 	m_pGrid->Setup(30);
 
@@ -92,7 +100,7 @@ void cMainGame::Setup()
 
 	m_pControl = new cCrtController;
 
-	m_pSkinnedMesh = new cSkinnedMesh("./RES/Zealot/", "Zealot.X");
+	m_pSkinnedMesh = new cSkinnedMesh("RES/Zealot/", "Zealot.X");
 	m_pSkinnedMesh->SetAnimationIndex(4);
 	m_pSkinnedMesh->SetRandomTrackPosition();
 	m_pSkinnedMesh->SetPosition(D3DXVECTOR3(0, 0, 0));
@@ -110,7 +118,7 @@ void cMainGame::Setup()
 	vector<D3DXVECTOR3> tempVertex;
 	cObjLoader objloader;
 	//m_pMapMesh = objloader.Load("./obj/Map.obj", m_vecMtlTex, tempVertex, &mat);
-	m_pMapMesh = objloader.Load("./RES/Test/Test.obj", m_vecMtlTex, tempVertex, &mat);
+	m_pMapMesh = objloader.Load("RES/Test/Test.obj", m_vecMtlTex, tempVertex, &mat);
 	//m_pMapMesh = objloader.Load("./Test/1.obj", m_vecMtlTex, tempVertex, &mat);
 	m_pControl->Setup(tempVertex);
 
@@ -137,7 +145,7 @@ void cMainGame::Setup()
 	LPDIRECT3DTEXTURE9 pTexture = NULL;
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"./RES/IMAGE/인벤.png",
+		"RES/IMAGE/인벤.png",
 		D3DX_DEFAULT,
 		D3DX_DEFAULT,
 		D3DX_DEFAULT,
@@ -154,7 +162,7 @@ void cMainGame::Setup()
 	LPDIRECT3DTEXTURE9 pTexture2 = NULL;
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"./RES/IMAGE/닫기.png",
+		"RES/IMAGE/닫기.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,
@@ -170,7 +178,7 @@ void cMainGame::Setup()
 	//수락
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"./RES/IMAGE/수락.png",
+		"RES/IMAGE/수락.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,
@@ -186,7 +194,7 @@ void cMainGame::Setup()
 	//거절
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"./RES/IMAGE/거절.png",
+		"RES/IMAGE/거절.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,
