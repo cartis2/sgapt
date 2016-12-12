@@ -1,0 +1,42 @@
+﻿  stdafx.cpp
+  iMap.cpp
+  Dx3D.cpp
+  cTimeManager.cpp
+  cTextureManager.cpp
+  cSkinnedMesh.cpp
+  cRay.cpp
+  cPyramid.cpp
+  cObjMap.cpp
+  cObjLoader.cpp
+  cObject.cpp
+  cMtlTex.cpp
+  cMainGame.cpp
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cmaingame.cpp(101): warning C4316: 'cCamera': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cmaingame.cpp(104): warning C4316: 'cCrtController': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cmaingame.cpp(114): warning C4316: 'cPyramid': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+  cGroup.cpp
+  cGrid.cpp
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cgrid.cpp(58): warning C4316: 'cPyramid': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cgrid.cpp(64): warning C4316: 'cPyramid': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\cgrid.cpp(70): warning C4316: 'cPyramid': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+  cGameObject.cpp
+  cFrame.cpp
+  cDeviceManager.cpp
+  cCube.cpp
+  cCrtController.cpp
+  cCamera.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  cAutoReleasePool.cpp
+  cAseLoader.cpp
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\caseloader.cpp(222): warning C4316: 'cFrame': 힙에 할당된 개체가 16에 맞추어져 있지 않을 수도 있습니다
+  cAllocateHierarchy.cpp
+d:\project\sgapt\pt_ksh\애니메이션\dx3d\callocatehierarchy.cpp(23): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+  cActionSeq.cpp
+  cActionRepeat.cpp
+  cActionMove.cpp
+  cAction.cpp
+  코드를 생성하고 있습니다...
+  Dx3D.vcxproj -> D:\Project\sgapt\PT_KSH\애니메이션\Debug\Dx3D.exe
+  Dx3D.vcxproj -> D:\Project\sgapt\PT_KSH\애니메이션\Debug\Dx3D.pdb (Full PDB)
