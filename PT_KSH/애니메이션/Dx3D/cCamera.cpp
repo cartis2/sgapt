@@ -3,8 +3,8 @@
 
 
 cCamera::cCamera(void)
-	: m_vEye(0, 0, -10)
-	, m_vLookAt(0, 0, 0)
+	: m_vEye(0, 0, 0)
+	, m_vLookAt(0, 0, 10)
 	, m_vUp(0, 1, 0)
 	, m_isLButtonDown(false)
 	, m_fAngleX(0.0f)
@@ -31,7 +31,7 @@ void cCamera::Setup()
 void cCamera::Update(D3DXVECTOR3* pTarget)
 {
 	m_vEye = D3DXVECTOR3(0, 0, -m_fDistance);
-	m_vLookAt = D3DXVECTOR3(0, 0, 0);
+	m_vLookAt = D3DXVECTOR3(0, 0, 10);
 
 	D3DXMATRIXA16 matRX, matRY, mat;
 	D3DXMatrixRotationX(&matRX, m_fAngleX);
