@@ -35,7 +35,7 @@ void cMap::Setup()
 
 	m_pControl = new cCrtController;
 
-	m_pSkinnedMesh = new cSkinnedMesh("Zealot/", "Zealot.X");
+	m_pSkinnedMesh = new cSkinnedMesh("RES/Zealot/", "Zealot.X");
 	m_pSkinnedMesh->SetAnimationIndex(4);
 	m_pSkinnedMesh->SetRandomTrackPosition();
 	m_pSkinnedMesh->SetPosition(D3DXVECTOR3(0, 0, 0));
@@ -47,7 +47,7 @@ void cMap::Setup()
 	
 	vector<D3DXVECTOR3> tempVertex;
 	cObjLoader objloader;
-	m_pMapMesh = objloader.Load("./Test/map.obj", m_vecMtlTex, tempVertex, &mat);
+	m_pMapMesh = objloader.Load("./RES/Test/map.obj", m_vecMtlTex, tempVertex, &mat);
 	m_pControl->Setup();
 	m_pControl->SetMapVertex(tempVertex);
 

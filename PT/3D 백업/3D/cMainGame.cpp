@@ -76,7 +76,7 @@ void cMainGame::Setup()
 	LPDIRECT3DTEXTURE9 pTexture = NULL;
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"인벤.png",
+		"./RES/IMAGE/인벤.png",
 		D3DX_DEFAULT,
 		D3DX_DEFAULT,
 		D3DX_DEFAULT,
@@ -93,7 +93,7 @@ void cMainGame::Setup()
 	LPDIRECT3DTEXTURE9 pTexture2 = NULL;
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"닫기.png",
+		"./RES/IMAGE/닫기.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,
@@ -109,7 +109,7 @@ void cMainGame::Setup()
 	//수락
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"수락.png",
+		"./RES/IMAGE/수락.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,
@@ -125,7 +125,7 @@ void cMainGame::Setup()
 	//거절
 	D3DXCreateTextureFromFileEx(
 		g_pD3DDevice,
-		"거절.png",
+		"./RES/IMAGE/거절.png",
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT_NONPOW2,
 		D3DX_DEFAULT,

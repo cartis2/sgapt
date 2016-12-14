@@ -181,7 +181,7 @@ void cObjLoader::LoadMtlLib(char* szPath, vector<cMtlTex*>& vecMtlTex)
 				string sFileName, sFolder;
 				sscanf_s(szBuf, "%*s %s", TextureName, 1024);
 
-				sFolder = "./Test/Texture/";
+				sFolder = "./RES/Test/Texture/";
 				sFileName = TextureName;
 				string sFullPath = sFolder + sFileName;
 
