@@ -1,5 +1,6 @@
 #pragma once
 
+#include "inc/fmod.h"
 #include "inc/fmod.hpp"		//fomd.hpp 추가
 #pragma comment(lib, "lib/fmodex_vc.lib")	//lib 링크
 using namespace FMOD;			//FMOD 네임스페이스 사용

@@ -18,6 +18,14 @@ HRESULT cSoundManager::init(void)
 	//사운드 채널수 생성
 	_system->init(TOTALSOUNDBUFFER, FMOD_INIT_NORMAL, 0);
 
+
+
+	//3d 사운드 세팅 필요
+	//_system->set3DSettings()
+	//
+
+
+
 	//사운드 , 채널 동적할당
 	_sound = new Sound *[TOTALSOUNDBUFFER];
 	_channel = new Channel *[TOTALSOUNDBUFFER];
@@ -95,6 +103,18 @@ void cSoundManager::addSound(std::string keyName, std::string soundName, bool bg
 		_system->createSound(soundName.c_str(), FMOD_DEFAULT, 0, &_sound[_mTotalSounds.size()]);
 	}
 
+
+
+	//3d 사운드 추가
+	_system->set3DSettings(1.0, 1.0, 1.0);
+	_system->createSound(soundName.c_str(), FMOD_3D, 0, &_sound[_mTotalSounds.size()]);
+	_sound[_mTotalSounds.size()]->set3DMinMaxDistance(0.5f, 5000.0f);
+	_sound[_mTotalSounds.size()]->setMode(FMOD_LOOP_NORMAL);
+	//
+
+
+
+
 	//맵에 사운드를 키값과 함께 담아준다
 	_mTotalSounds.insert(make_pair(keyName, &_sound[_mTotalSounds.size()]));
 }
@@ -110,6 +130,17 @@ void cSoundManager::play(std::string keyName, float volume)
 		{
 			//사운드 플레이
 			_system->playSound(FMOD_CHANNEL_FREE, *iter->second, false, &_channel[count]);
+			
+
+			//3d 사운드 세팅
+			FMOD_VECTOR pos = { -10.0f * 0.1f, 0.0f, 0.0f };
+			FMOD_VECTOR vel = { 0.0f, 0.0f, 0.0f };
+
+			_channel[count]->set3DAttributes(&pos, &vel);
+
+			//
+
+
 			//볼륨셋팅
 			_channel[count]->setVolume(volume);
 			break;
