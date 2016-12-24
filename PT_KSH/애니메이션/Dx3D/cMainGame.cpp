@@ -121,6 +121,7 @@ void cMainGame::Setup()
 	m_stMtlPicked.Ambient = m_stMtlPicked.Diffuse = m_stMtlPicked.Specular = D3DXCOLOR(0.8f, 0.0f, 0.0f, 1.0f);
 
 	SetLight();
+	//
 }
 
 void cMainGame::Update()
